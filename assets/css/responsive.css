@@ -1,0 +1,282 @@
+/* Min Width 1200px and Max Width 1399px */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* Min Width 992px and Max Width 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-content h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .hero-content h2 {
+    font-size: 86px;
+  }
+
+  .wedding-events-content h2 {
+    font-size: 82px;
+    line-height: 130px;
+  }
+
+  .wedding-events-left img,
+  .wedding-events-right img {
+    max-width: 60%;
+  }
+
+  .wedding-events-right img {
+    float: right;
+  }
+}
+
+/* Min Width 768px and Max Width 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content h1 {
+    font-size: 110px;
+    line-height: 100px;
+  }
+
+  .hero-content h2 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  .hero-content h4 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .video-top h2 {
+    font-size: 56px;
+  }
+
+  .video-wrapper {
+    min-height: 500px;
+    max-height: 500px;
+    height: 100%;
+  }
+
+  .video-thumbnail > img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    height: 100%;
+  }
+
+  .celebration-top h2 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .celebration-content h3,
+  .wedding-events-content h3 {
+    font-size: 36px;
+    line-height: 65px;
+  }
+
+  .wedding-events-content h2 {
+    font-size: 64px;
+    line-height: 120px;
+  }
+
+  .wedding-events-left img,
+  .wedding-events-right img {
+    max-width: 50%;
+  }
+
+  .wedding-events-right img {
+    float: right;
+  }
+
+  .gallery-buttons {
+    padding-top: 50px;
+  }
+
+  .client-testimonial {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 50px 20px;
+  }
+
+  .footer-wrapper {
+    background-position: center;
+  }
+
+  .footer-terms ul li {
+    padding-left: 0;
+    padding-right: 45px;
+  }
+}
+
+/* Min Width 300px and Max Width 767px */
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero-wrapper {
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .hero-content h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .outline-btn a,
+  .fill-btn a {
+    padding: 12px 25px;
+  }
+
+  .video-top h2 {
+    font-size: 36px;
+    line-height: 55px;
+  }
+
+  .video-wrapper {
+    min-height: 400px;
+    max-height: 400px;
+    height: 100%;
+  }
+
+  .video-thumbnail > img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    height: 100%;
+  }
+
+  .play a img {
+    max-width: 60px;
+    width: 100%;
+  }
+
+  .play h4 {
+    font-size: 24px;
+  }
+
+  .celebration-top h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .celebration-content h3,
+  .wedding-events-content h3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .celebration-content h5 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .celebration-shape1,
+  .celebration-shape2 {
+    display: none;
+  }
+
+  .wedding-events-wrapper {
+    padding: 100px 0;
+  }
+
+  .wedding-events-content h2 {
+    font-size: 30px;
+    line-height: 65px;
+  }
+
+  .wedding-events-content h2 sup {
+    font-size: 18px;
+    left: -15px;
+    top: -25px;
+  }
+
+  .wedding-events-left img,
+  .wedding-events-right img {
+    max-width: 30%;
+  }
+
+  .wedding-events-right img {
+    float: right;
+  }
+
+  .gallery-content h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .gallery-content h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .gallery-buttons {
+    padding-top: 50px;
+  }
+
+  .download-brochure-btn,
+  .gallery-buttons .outline-btn {
+    padding-bottom: 50px;
+  }
+
+  .gallery-shapes,
+  .connect-shapes {
+    display: none;
+  }
+
+  .connect-container {
+    padding: 20px;
+  }
+
+  .client-testimonial {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 50px 20px;
+  }
+
+  .testimonial-slide-content {
+    position: initial;
+    top: 0;
+    transform: initial;
+    padding: 0px 25px;
+    text-align: center;
+  }
+
+  .owl-prev,
+  .owl-next {
+    top: 45%;
+  }
+
+  .owl-prev img,
+  .owl-next img {
+    max-width: 70%;
+  }
+
+  .owl-prev {
+    left: -25px;
+  }
+
+  .owl-next {
+    right: -25px;
+  }
+
+  .footer-wrapper {
+    background-position: center;
+  }
+
+  .footer-terms ul li {
+    padding-left: 0;
+    padding-right: 7px;
+  }
+}

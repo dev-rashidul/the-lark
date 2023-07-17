@@ -1,0 +1,1128 @@
+/* Base Styles CSS Start */
+
+/* Fonts */
+
+@font-face {
+  font-family: GalanoGrotesque;
+  src: url(../fonts/GalanoGrotesqueLight.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: GalanoGrotesque;
+  src: url(../fonts/GalanoGrotesqueRegular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: GalanoGrotesque;
+  src: url(../fonts/GalanoGrotesqueMedium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: GalanoGrotesque;
+  src: url(../fonts/GalanoGrotesqueSemiBold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: GalanoGrotesque;
+  src: url(../fonts/GalanoGrotesqueBold.otf);
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: GalanoGrotesque;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.outline-btn a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 14px 35px;
+  color: #fff;
+  border: 1px solid #ffffff;
+  z-index: 1;
+}
+
+.outline-btn a::after {
+  position: absolute;
+  content: "";
+  left: 6px;
+  bottom: -6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  z-index: -1;
+}
+
+.fill-btn a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 14px 35px;
+  color: #04212f;
+  background: #fff;
+  border: 1px solid #ffffff;
+  z-index: 1;
+}
+
+.fill-btn a::after {
+  position: absolute;
+  content: "";
+  left: 6px;
+  bottom: -6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  z-index: -1;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  border: none;
+}
+
+.modal-content ul li {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.modal-content ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none !important;
+}
+
+.modal-content ul li a::after {
+  border: none;
+}
+
+/* Base Styles CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #04212f;
+  padding: 30px 0;
+  z-index: 999;
+}
+
+.logo img {
+  position: absolute;
+  top: -36px;
+  max-width: 180px;
+  width: 100%;
+}
+
+.learn-more-btn a {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #04212f;
+  background: #ffffff;
+  padding: 13px 30px;
+}
+
+.learn-more-btn a img {
+  padding-right: 6px;
+}
+
+.learn-more-btn a::after {
+  position: absolute;
+  content: "";
+  left: 6px;
+  bottom: -6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  z-index: -1;
+}
+
+.call-us {
+  padding-left: 80px;
+  text-align: center;
+}
+
+.call-us span,
+.call-us a {
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.call-us a {
+  font-weight: 600;
+}
+
+.nav-social {
+  padding-left: 50px;
+}
+
+.nav-social ul li {
+  padding-left: 30px;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.toggler-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #e74c3c;
+  display: block;
+  transition: all 0.2s;
+}
+
+.middle-bar {
+  margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-nav {
+    padding-top: 80px;
+  }
+
+  .call-us {
+    padding-left: 0;
+    padding-top: 40px;
+    text-align: left;
+  }
+
+  .navbar-nav {
+    padding-top: 80px;
+  }
+
+  .nav-social {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .nav-social ul li {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo img {
+    position: absolute;
+    top: -36px;
+    max-width: 100px;
+    width: 100%;
+  }
+}
+
+/* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 220px 0 150px;
+}
+
+.hero-content {
+  text-align: right;
+}
+
+.hero-content h1 {
+  font-size: 200px;
+  font-weight: 300;
+  line-height: 200px;
+  letter-spacing: 16.015px;
+  text-transform: capitalize;
+  text-shadow: 0px 5px 19px #0000008c;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 108px;
+  font-weight: 300;
+  line-height: 120px;
+  letter-spacing: 8.7px;
+  text-transform: capitalize;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
+  color: #0ff;
+}
+
+.hero-content h4 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: capitalize;
+  text-shadow: 0px 3px 11px rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+/* Hero Section CSS End */
+
+/* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Video Part CSS Start */
+
+.video-wrapper {
+  position: relative;
+  background: url(../images/video-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  max-height: 700px;
+  height: 100%;
+  z-index: 1;
+}
+
+.video-top {
+  max-width: 1270px;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.video-top h2 {
+  font-size: 72px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.video-thumbnail > img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 605px;
+  max-height: 605px;
+  height: 100%;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.play a img {
+  max-width: 120px;
+  width: 100%;
+}
+
+.play h4 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 10px;
+}
+
+/* Video Part CSS End */
+
+/* Celebration Section CSS Start */
+
+.celebration-wrapper {
+  background: url(../images/celebration-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+
+.celebration-top {
+  padding-top: 200px;
+}
+
+.celebration-top h2 {
+  font-size: 64px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 80px;
+  text-transform: capitalize;
+  color: #0b0b0b;
+}
+
+.celebration-content {
+  padding-top: 80px;
+}
+
+.celebration-content h3 {
+  max-width: 1000px;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #042231;
+}
+
+.celebration-content h5 {
+  max-width: 550px;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+  text-transform: capitalize;
+  padding-top: 20px;
+  color: #0b0b0b;
+}
+
+.celebration-content ul::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 270px;
+  height: 1px;
+  background: #dfdfdf;
+}
+
+.celebration-content ul li {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding: 15px 0;
+  color: #0b0b0b;
+}
+
+.celebration-content ul li img {
+  padding-right: 20px;
+}
+
+.celebration-buttons .outline-btn a,
+.celebration-buttons .outline-btn a::after {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.celebration-buttons .fill-btn a {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+
+.celebration-buttons .fill-btn a::after {
+  border: 1px solid #000;
+}
+
+.celebration-shape1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.celebration-shape2 {
+  position: absolute;
+  right: 0;
+  bottom: -75px;
+}
+
+/* Celebration Section CSS End */
+
+/* Wedding Events Section CSS Start */
+
+.wedding-events-wrapper {
+  background: url(../images/wedding-events-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.wedding-events-content {
+  max-width: 1200px;
+}
+
+.wedding-events-content h2 {
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 180px;
+  text-align: center;
+  background: var(
+    --zzzzz,
+    linear-gradient(
+      255deg,
+      #0ff 0%,
+      #00faff 14%,
+      #00ecff 31%,
+      #00d5ff 48%,
+      #00b6ff 66%,
+      #008dff 84%,
+      #0065ff 100%
+    )
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wedding-events-content h2 sup {
+  font-size: 30px;
+  font-weight: 300;
+  background: var(
+    --zzzzz,
+    linear-gradient(
+      255deg,
+      #0ff 0%,
+      #00faff 14%,
+      #00ecff 31%,
+      #00d5ff 48%,
+      #00b6ff 66%,
+      #008dff 84%,
+      #0065ff 100%
+    )
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: -45px;
+  top: -70px;
+}
+
+.wedding-events-content h3 {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 80px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.wedding-events-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.wedding-events-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Wedding Events Section CSS End */
+
+/* Gallery Section CSS Start */
+
+.gallery-wrapper {
+  padding: 100px 0 180px;
+}
+
+.gallery-content h2 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 55px;
+  text-transform: capitalize;
+  color: #002642;
+}
+
+.gallery-content h2 span {
+  background: var(
+    --zzzzz,
+    linear-gradient(
+      255deg,
+      #0ff 0%,
+      #00faff 14%,
+      #00ecff 31%,
+      #00d5ff 48%,
+      #00b6ff 66%,
+      #008dff 84%,
+      #0065ff 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gallery-content h4 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.download-brochure-btn a {
+  position: relative;
+  font-size: 18px;
+  background: var(
+    --zzzzz,
+    linear-gradient(
+      255deg,
+      #0ff 0%,
+      #00faff 14%,
+      #00ecff 31%,
+      #00d5ff 48%,
+      #00b6ff 66%,
+      #008dff 84%,
+      #0065ff 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 14px 35px;
+  border: 1px solid #3797fa;
+  z-index: 1;
+}
+
+.download-brochure-btn a::after {
+  position: absolute;
+  content: "";
+  left: 6px;
+  bottom: -6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3797fa;
+  z-index: -1;
+}
+
+.gallery-buttons .outline-btn a,
+.gallery-buttons .outline-btn a::after {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.gallery-buttons .fill-btn a {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+
+.gallery-buttons .fill-btn a::after {
+  border: 1px solid #000;
+}
+
+.gallery-img img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.gallery-full img {
+  min-height: 656px;
+  max-height: 656px;
+  object-fit: cover;
+}
+
+.gallery-half img {
+  max-height: 324px;
+  min-height: 324px;
+  object-fit: cover;
+}
+
+.photo-gallery-btn .outline-btn a,
+.photo-gallery-btn .outline-btn a::after {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.gallery-shape1 {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+.gallery-shape2 {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.gallery-shape1 img,
+.gallery-shape2 img {
+  opacity: 0.1;
+}
+
+/* Gallery Section CSS End */
+
+/* Testimonail Section CSS Start */
+
+.testimonial-wrapper {
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.connect-container {
+  background: #fff;
+  box-shadow: 0px 1.5978723764419556px 13.422127723693848px 2.556595802307129px
+    rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 30px;
+  border: 23.968px solid #04212f;
+}
+
+.connect-content h3 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #04212f;
+  padding-bottom: 10px;
+}
+
+.connect-content span {
+  font-size: 14.381px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #738ea5;
+}
+
+.connect-content h5 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+  background: var(
+    --zzzzz,
+    linear-gradient(
+      255deg,
+      #0ff 0%,
+      #00faff 14%,
+      #00ecff 31%,
+      #00d5ff 48%,
+      #00b6ff 66%,
+      #008dff 84%,
+      #0065ff 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 10px;
+}
+
+.connect-separator {
+  padding: 10px 0 20px;
+}
+
+.connect-form-wrapper {
+  z-index: 1;
+}
+
+.form-input-field,
+.form-date-field,
+.form-select-field {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.form-input-field input,
+.form-date-field input,
+.form-select-field select {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  color: #505153;
+  padding-bottom: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.form-input-field input:focus,
+.form-date-field input:focus,
+.form-select-field select:focus {
+  outline: 0;
+}
+
+.connect-form ::placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #505153;
+}
+
+.form-submit-btn button {
+  position: relative !important;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 12px 50px;
+  color: #fff;
+  background: #03131a;
+  margin-top: 15px;
+  border: 1px solid #03131a;
+  z-index: -1;
+}
+
+.form-submit-btn button::after {
+  position: absolute;
+  content: "";
+  left: 6px;
+  bottom: -6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #03131a;
+  z-index: -1;
+}
+
+.connect-form-shape {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.connect-form-shape img {
+  max-width: 400px;
+  opacity: 0.05;
+}
+
+.connect-shape1 {
+  position: absolute;
+  top: 0px;
+  right: -205px;
+}
+
+.connect-shape2 {
+  position: absolute;
+  left: -205px;
+  bottom: 0px;
+}
+
+.client-testimonial {
+  position: relative;
+  text-align: center;
+  background: #edf3f8;
+  margin-left: 50px;
+  padding: 50px;
+}
+
+.client-testimonial::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 200px;
+  background: #ffffff;
+}
+
+.client-testimonial h3 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 28.9px;
+  text-transform: capitalize;
+  color: #03131a;
+  padding-bottom: 30px;
+}
+
+.testimonail-slide-bg img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.testimonial-slide-content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  padding: 0 85px;
+  text-align: center;
+}
+
+.testimonial-slide-content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 23.968px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.testimonial-slide-content h6 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.968px;
+  text-transform: capitalize;
+  color: #a2a2a2;
+}
+
+.testimonial-slide-content p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #000;
+  padding-top: 5px;
+}
+
+.rating ul li {
+  padding: 05px;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -50px;
+}
+
+.owl-next {
+  right: -50px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+}
+
+.testimonial-slider-shape {
+  position: absolute;
+  right: 70px;
+  bottom: 40px;
+}
+
+/* Testimonail Section CSS End */
+
+/* Main Part CSS End */
+
+/* Footer Part CSS Start */
+
+.footer-wrapper {
+  background: url(../images/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.footer-about,
+.footer-nav-wrapper {
+  max-width: 450px;
+  width: 100%;
+}
+
+.footer-about p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 174%;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.footer-menu h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: capitalize;
+  background: var(
+    --zzzzz,
+    linear-gradient(
+      255deg,
+      #0ff 0%,
+      #00faff 14%,
+      #00ecff 31%,
+      #00d5ff 48%,
+      #00b6ff 66%,
+      #008dff 84%,
+      #0065ff 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 20px;
+}
+
+.footer-nav ul li {
+  padding: 7px 0;
+}
+
+.footer-nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-nav ul li a img {
+  padding-right: 10px;
+}
+
+.footer-social ul li {
+  padding-right: 20px;
+}
+
+.footer-wrapper hr {
+  opacity: 1;
+  border-top: 1px solid #bbb;
+  margin: 20px 0;
+}
+
+.footer-copyright p,
+.footer-terms ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-terms ul li {
+  padding-left: 45px;
+}
+
+/* Footer Part CSS End */
+
+.select {
+  position: relative;
+}
+
+.select .selectBtn {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  color: #505153;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-select-field .select {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.select .selectBtn:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 5px;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transition: 0.2s ease;
+}
+
+.select .selectBtn.toggle:after {
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.select .selectDropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  z-index: 1;
+  background: #fff;
+  margin-top: 5px;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.select .selectDropdown .option {
+  font-size: 15px;
+  font-weight: 300;
+  color: #505153;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select .selectDropdown .option:hover {
+  background: #f8f8f8;
+}
+
+.select .selectDropdown.toggle {
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
