@@ -917,12 +917,16 @@ nav.navbar {
 }
 
 .testimonial-slide-content p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 22px;
   text-transform: capitalize;
   color: #000;
   padding-top: 5px;
+}
+
+.rating {
+  margin-top: -10px;
 }
 
 .rating ul li {
